@@ -1,6 +1,12 @@
 {
-  "callsign": "[local-worker 01]",
+  "callsign": "local-guardian-strateg",
   "status": "working",
-  "current_task": "Bootstrap local-guardian repo + maintenance scripts",
-  "timestamp": "2026-04-14T20:50:00+02:00"
+  "current_task": "Przyjęcie roli stratega — krok 0 initialization",
+  "timestamp": "2026-04-14T23:21:51+02:00",
+  "last_completed": [
+    "Bootstrap local-guardian repo + maintenance scripts — [local-worker 01]"
+  ],
+  "pending": [
+    "Awaiting strateg direction from user"
+  ]
 }
