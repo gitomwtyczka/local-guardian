@@ -1,0 +1,8 @@
+# Reports (generated locally)
+reports/*.csv
+reports/*.html
+
+# OS
+Thumbs.db
+Desktop.ini
+*.tmp
