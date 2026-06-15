@@ -3,7 +3,7 @@
 ## Stack
 - PowerShell 5.1+ / 7.x
 - Windows Event Log, WMI/CIM, PnP
-- Target stellar-relay: `local-pc` (execute_command)
+- Środowisko: local-pc (Antigravity IDE — `run_command`)
 
 ## Konwencje
 - Nazwy skryptów: `Verb-Noun.ps1` (PowerShell standard)
@@ -23,4 +23,6 @@
 
 ## UAC
 Skrypty wymagające admina mają `#Requires -RunAsAdministrator` na górze.
-Przez bridge: używaj UAC elevation pattern (patrz GEMINI.md §UAC).
+Elevation przez Antigravity IDE — patrz GEMINI.md §UAC.
+
+*Zaktualizowano: 2026-06-15 [sup-worker-01] — usunięto referencję do stellar-relay/bridge; środowisko = run_command*
