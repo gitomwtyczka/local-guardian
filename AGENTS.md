@@ -26,3 +26,12 @@ Skrypty wymagające admina mają `#Requires -RunAsAdministrator` na górze.
 Elevation przez Antigravity IDE — patrz GEMINI.md §UAC.
 
 *Zaktualizowano: 2026-06-15 [sup-worker-01] — usunięto referencję do stellar-relay/bridge; środowisko = run_command*
+
+## SSH z PowerShell — jeden wzorzec, zawsze ten sam
+
+Tryb A (prosta, 1 linia): `ssh -i C:\Users\tomas2\.ssh\oracle-crimson.key -o StrictHostKeyChecking=no ubuntu@147.224.162.100 "komenda"`
+
+Tryb B (złożona, domyślny): `write_to_file` → `scp pełna ścieżka` → `ssh bash /tmp/skrypt.sh`
+
+Zasada kciuka: >1 cudzysłów lub $zmienna = Tryb B.
+Dlaczego: PowerShell interpoluje zmienne i mangluje cudzysłowy zanim dotrą do SSH. Plik omija escapowanie.
