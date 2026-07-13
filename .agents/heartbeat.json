@@ -1,12 +1,12 @@
 {
-  "callsign": "local-guardian-strateg",
+  "callsign": "local-guardian",
   "status": "working",
-  "current_task": "Przyjęcie roli stratega — krok 0 initialization",
-  "timestamp": "2026-04-14T23:21:51+02:00",
+  "current_task": "Audit dużych plików we wszystkich repo",
+  "timestamp": "2026-07-13T21:59:00+02:00",
   "last_completed": [
     "Bootstrap local-guardian repo + maintenance scripts — [local-worker 01]"
   ],
   "pending": [
-    "Awaiting strateg direction from user"
+    "Audit dużych plików w ekosystemie"
   ]
 }
